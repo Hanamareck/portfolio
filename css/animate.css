@@ -1271,6 +1271,8 @@
 }
 
 .fadeInDown {
+  -webkit-animation-delay: .3s;
+  animation-delay: .3s;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
 }

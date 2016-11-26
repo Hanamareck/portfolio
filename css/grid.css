@@ -50,8 +50,16 @@ that starts with (^) a property (col)
 
 .col-1of3 { 
     width: 33.3333%;
+    padding-right:1rem;
 }
 
+.col-2of8 {
+    width: 25%;
+    padding: 1rem .5rem 1rem .5rem;
+}
+
+
+.col-2of8 img, .col-1of2 img{max-width:100%;}
 
 
 
@@ -64,24 +72,37 @@ that starts with (^) a property (col)
         width: 100%;
     }
     
+
+    
 }
 
 @media (max-width: 30rem) { 
     .col-1of3 { 
-    width: 100%;
+        width: 100%;
 
+    }
+    
+    .col-1of2 { 
+        width: 100%;
+
+    }
+    .col-1of2 img{
+        padding:1rem 0 1rem 0;
     }
     .col-2of4 {
-    width: 100%;
+        width: 100%;
 
     }
-
+    .col-2of8{
+        width: 100%;
+        padding: 1rem 2rem 1rem 2rem;
+    }
 
     .col-3of4 {
         width: 100%;
     }
     .col-1of4 {
-    width: 100%;
+        width: 100%;
     }
 }
     
