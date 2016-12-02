@@ -76,19 +76,32 @@ that starts with (^) a property (col)
     
 }
 
-@media (max-width: 30rem) { 
+@media(max-width:45em){
     .col-1of3 { 
         width: 100%;
-
     }
-    
+        
     .col-1of2 { 
         width: 100%;
 
     }
     .col-1of2 img{
-        padding:1rem 0 1rem 0;
+        padding:1rem 0 1.5rem 0;
     }
+
+
+    .col-2of8 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 30rem) { 
+
+   .col-1of3.fillip-grid{
+        width:100%;
+        padding-left:2rem;
+    }
+
     .col-2of4 {
         width: 100%;
 

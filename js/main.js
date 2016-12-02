@@ -8,23 +8,6 @@
 				navigation: true,
 				navigationPosition: 'left',
 				navigationTooltips: ['about', 'fillip', 'travelocity', 'instructional video', 'central city'],
-                onLeave: function(index, nextIndex, direction){
-                    
-                if(nextIndex == 2){
-                    $("#section1").children().addClass(' animated fadeInUp');                 
-                }
-                    
-                else if(nextIndex == 3){
-                    $("#section2").children().addClass(' animated fadeInUp');                 
-                }
-               
-                else if(nextIndex == 4){
-                    $("#section3").children().addClass(' animated fadeInUp');                 
-                }                    
-                else if(nextIndex == 5){
-                    $("#section4").children().addClass(' animated fadeInUp');                 
-                }                    
-                                        
-                }
+
 			});
 		});

@@ -110,6 +110,7 @@ html.fp-enabled,
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
 }
+
 #fp-nav.right {
     right: 17px;
 }
@@ -166,6 +167,10 @@ html.fp-enabled,
     margin: -6px 0 0 -6px;
     border-radius: 100%;
  }
+#fp-nav a:hover{
+    border:0;
+}
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
     border-radius: 50%;

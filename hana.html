@@ -4,7 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Hana Mareck - About Me</title>
+	<title>Hana Mareck - Fillip</title>
 	<meta name="author" content="Hana Mareck" />
     <META NAME="description" CONTENT="Hana Mareck - Experience Designer residing in Vancouver, BC. Content strategy, web design, visual design, motion graphics.">
     <META NAME="keywords" CONTENT="hana, mareck, hana mareck, designer, design, ux, ui, vancouver, SIAT, sfu, interactive, technology, graphic, experience, web, code, brand, content, strategy, content strategist, content strategy, communication, development, motion, graphics, after effects, motion design, motion designer,">
@@ -17,57 +17,111 @@
     <link rel="stylesheet" href="css/grid.css">
 
 </head>
-<body id="about-container">
+<body class="about-container">
 
 
-	<div class="hamburger"><a href="index2.html"><h3>☰</h3></a></div>
+    <div id="hamburger"><a href="index.html"><img src="img/back.png" alt="back arrow"></a></div>
+    
+	<div class="page-content-container">
 
-	<section class="page-content-container">
 
-
-		<div class="page-border animated fadeInDown">
+		<section class="page-border about-intro animated fadeInDown">
 			<div class="grid">
-
-				<div class="col-1of4">
-			    	<div class="underline"><h2>Hi, I'm Hana.</h2></div>
-				</div>
-
-				<div class="col-3of4">
-			    	<p>My name is Hana Mareck, and I'm a senior design student studying at Simon Fraser University, in Vancouver, BC. I have a love for all things design and strive to make myself invaluable in a wide variety of ways.</P>
-				</div>
-
-			</div>
-		</div>
-
-
-		<div class="page-specific-container">
-
-
-			<div class="grid animated fadeIn">
-
-				<div class="col-1of4">
-					<div class="page-image"><img src="img/hanablue.jpg" alt="it's hana smiling"></div>
-				</div>
-
-
-
-				<div class="col-3of4">
-
-			    	<p><strong>EXPERIENCE DESIGN, UX, UI, IxD</strong>. Late night ideation sessions, designing new solutions and meaningful experiences, prototyping, IxD, usability testing, and all that jazz.</P>
-
-			    	<p><strong>CONTENT STRATEGY</strong>. I love persuasive writing and perfecting strategies behind creating great content. Currently, I'm working as a Teaching Assistant for a writing class.</P>
-
-
-			    	<h3>I want to talk to you.</h3>
-			    	<p>If you want to get to know me a little better, shoot me an email at hana.mareck@gmail.com, take a peek at my resume, or connect with me on linkedin.</P>
-			    		
-				</div>
+                
+                
+                <div class="intro-text about-intro">
+                    <div class="underline"><h2>Hi, I'm Hana.</h2></div>
+                    
+			    	<p>My name is Hana Mareck, and I'm a senior design student studying at Simon Fraser University, in Vancouver, BC. I have a love for all things design and strive to make myself invaluable in a wide variety of ways. I aim to create delightful and user-centered products that are rooted in deep research and relations to context, with thoughtful communication. </P>
+                </div>
+            
 
 			</div>
-		</div>
+		</section>
 
-	</section>
 
+		<section class="page-specific-container about-intro">
+
+			<div class="grid about-intro animated fadeIn">
+                
+
+				<div class="col-2of8">
+                    <p><strong>EXPERIENCE DESIGN, UX, UI, IxD. </strong>Late night ideation sessions, designing new solutions and meaningful experiences, prototyping, IxD, usability testing, and all that jazz.</p>
+				</div>
+
+				<div class="col-2of8">
+                    <p><strong>CONTENT STRATEGY. </strong>I love persuasive writing and perfecting strategies behind creating great content. Currently, I'm working as a Teaching Assistant for a writing class.</p>
+				</div>
+                
+				<div class="col-2of8">
+                    <p><strong>WEB DEVELOPMENT. </strong>I've been coding since I was 12 years old. I'm proficient in HTML and CSS, and I know my way around some Javascript and jQuery too.</p>
+
+				</div>
+                
+				<div class="col-2of8">
+                    <p><strong>MOTION GRAPHICS. </strong>After Effects may sometimes consume my life (especially within IxD). I love visualizing every last micro-interaction.</p>
+				</div>
+                
+                
+
+
+            </div>
+            <p class="animated fadeIn"><strong>I WANT TO TALK TO YOU. </strong>If you want to get to know me a little better, shoot me an email at <a href="mailto:hana.mareck@gmail.com">hana.mareck@gmail.com</a>, take a peek at my <a href="resume.pdf" target="_blank">resume</a>, or connect with me on <a href="https://www.linkedin.com/in/hanamareck">linkedin</a>. </p>
+            
+		  </section>
+
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script src="js/jquery.aniview.js"></script>
+    
+	<script>
+        
+        $('.aniview').AniView();
+
+		var elementPosition = $('#scrolling-menu').offset();
+
+		var opportunitiesPosition = $('#opportunities').offset();	
+		var researchPosition = $('#research-analysis').offset();
+		var creationPosition = $('#app-creation').offset();
+		var processPosition = $('#process').offset();
+		var designPosition = $('#design-decisions').offset();
+
+
+		$(window).scroll(function(){
+		        if($(window).scrollTop() > elementPosition.top){
+		              $('#scrolling-menu').css('position','fixed').css('top','0').css('width','26%');
+		        } else {
+		            $('#scrolling-menu').css('position','static').css('width','auto');
+		        }    
+
+		        if($(window).scrollTop() > opportunitiesPosition.top){
+		            $('#scrolling-menu-content').html("Finding Openings.");
+		        } 
+
+		        if($(window).scrollTop() > researchPosition.top){
+		              $('#scrolling-menu-content').html("Research Analysis.");
+		        } 
+
+		        if($(window).scrollTop() > creationPosition.top){
+		              $('#scrolling-menu-content').html("App Creation.");
+		        } 
+                if($(window).scrollTop() > processPosition.top){
+		              $('#scrolling-menu-content').html("Process.");
+		        } 
+                if($(window).scrollTop() > designPosition.top){
+		              $('#scrolling-menu-content').html("Design Decisions.");
+		        } 
+		});
+        
+                
+        $( document ).ready(function() {           
+            $("#hamburger").click(function() {
+		      $('#hamburger-expanded').fadeIn( "slow" );              
+            });    
+        });
+	</script>
 
 
 </body>

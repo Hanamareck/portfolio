@@ -17,19 +17,27 @@
     <link rel="stylesheet" href="css/grid.css">
 
 </head>
-<body id="fillip-container">
+<body class="fillip-container">
 
 
-	<div class="hamburger"><a href="index2.html"><h3>☰</h3></a></div>
+    <div id="hamburger"><a href="index.html"><img src="img/back.png" alt="back arrow"></a></div>
 
-	<div class="page-content-container">
+	
+    <div class="page-content-container">
 
 
 		<section class="page-border animated fadeInDown">
 			<div class="grid">
                 
                 <div class="intro-image-helper">
-                    <div class="intro-image"><img src="img/fillip.gif" alt="an series of animated interface screens showing the Fillip App"></div>
+                    <div class="intro-image fillip-intro-image">
+                        <picture>
+                            <source srcset="img/fillip.gif" media="(min-width: 70em)">
+                            <source srcset="img/fillip1screen.gif" media="(max-width: 50em) and (min-width:40em)">
+                            <img src="img/fillip2screen.gif" alt="an series of animated interface screens showing the Fillip App">
+                        </picture>
+
+                    </div>
                 
                 
                 <div class="intro-text">
@@ -58,7 +66,7 @@
 
 				<div class="col-1of4 aniview" data-av-animation="fadeInLeft">&nbsp;
 					<div id="scrolling-menu">
-						<div class="underline"><h2><div id="scrolling-menu-content">Identifying Opportunities.</div></h2></div>
+						<div class="underline"><h2><div id="scrolling-menu-content">Finding Openings.</div></h2></div>
 					</div>
 				</div>
 
@@ -67,7 +75,7 @@
 				<div class="col-3of4">
 
 		    		<div id="opportunities">
-                        <div class="hidden-h2"><h2>Identifying Opportunities.</h2></div>
+                        <div class="hidden-h2"><h2>Finding Openings.</h2></div>
 
 				    	<p><strong>ANTICIPATORY DESIGN. </strong>The group began by identifying a sector with an opportunity for design intervention. We were inspired by the concept of anticipatory design, and removing unnecessary choices to someone’s day and preventing the well-documented phenomenon of decision fatigue: meaning the more things we decide on over the course of a day, the less ability we have to make effective decisions. We saw potential to apply the concept of anticipatory design to fulfill a missing need of individuals living in urban areas. We found that across cities, people were experiencing friction when trying to come up with ideas for fun and interesting things to do.</P>
 
@@ -111,10 +119,7 @@
 						</div>
 
 			    		<p><strong>JOURNEY FRAMEWORK. </strong>A journey framework was then created with these principles in mind.</p>
-			    		<div class="content-image-container">
 			    			<img src="img/journey.png" class="enlarge" alt="a journey framework infographic to illustrate the user's journey through the Fillip App">
-			    			<div class="content-image-hover"><h3>CLICK TO ENLARGE</h3></div>
-			    		</div>
 			    		
 		    		</div>
 
@@ -125,37 +130,45 @@
 
 	    				<div class="hidden-h2"><h2>App Creation.</h2></div>
 						<p><strong>FINAL INTERFACE. </strong>Below are high-fidelity mockups of the final interface iteration, to help in illustrating the user's journey.</p>
-                        
-                        <div class="interface-container">                            
-                            <div class="interface-image"><img src="img/filliphome.png" alt="Fillip app homescreen"></div>
-                            <div class="interface-caption">
-                                <p><strong>HOMESCREEN. </strong>Beginning from the homescreen, the application allows for simple filtration to only anticipate activities that are feasible for the user to do in that  
-                                moment.</p>
+
+                        <div class="grid">
+                            <div class="col-1of3 fillip-grid">
+                                <img src="img/filliphome.png" alt="Fillip app homescreen">                                
+                                <p><strong>HOMESCREEN. </strong>Fillip implements a simple filtration system on the homescreen to only anticipate activities that are feasible for the user to do in that moment.</p>
+                            </div>
+                            <div class="col-1of3 fillip-grid">
+                                <img src="img/fillipchoosingactivities.png" alt="Fillip app activity choosing screen">
+                                <p><strong>CHOOSING ACTIVITIES. </strong>Having users compare two activities instead of endless scrolling or swiping encourages snap decisions and spontaneity.</p>
+                            </div>
+
+                            <div class="two-grid-clear">&nbsp;</div>       
+
+                            <div class="col-1of3 fillip-grid">
+                                <img src="img/fillipbrassneck.png" alt="Fillip app activity selected">
+                                <p><strong>ACTIVITY DETAILS. </strong>Providing users more specific information, and descriptions written with easygoing language help users decide on an activity.</p>
+                            </div>
+          
+                            <div class="three-grid-clear">&nbsp;</div>  
+
+                            <div class="col-1of3 fillip-grid">
+                                <img src="img/fillipactivityinvite.png" alt="Fillip app confirmation screen">                                
+                                <p><strong>CONFIRMATION SCREEN. </strong>Sufficient feedback is provided before users commit, and spontaniety is further encouraged by allowing friend invitations.</p>
+                            </div>
+
+                            <div class="two-grid-clear">&nbsp;</div>       
+
+                            <div class="col-1of3 fillip-grid">
+                                <img src="img/fillipcolors.png" alt="Fillip app saved for later screen">
+                                <p><strong>SAVE FOR LATER. </strong>Allows users to revisit interesting activity ideas - which ensures they will continually use Fillip as their activity idea reference.</p>
+                            </div>
+                            <div class="col-1of3 fillip-grid">
+                                <img src="img/fillipprofile.png" alt="Fillip app profile screen">
+                                <p><strong>PROFILE. </strong>A simple profile page allows users to connect with their friends, and review the catalogue of all the fun activities they've done in the past.</p>
                             </div>
                         </div>
-                        <div class="interface-container">
-                            <div class="interface-image"><img src="img/fillipchoosingactivities.png" alt="Fillip app activity compare screen"></div>
-                            <div class="interface-caption"><p><strong>CHOOSING ACTIVITIES. </strong>The more a user uses Fillip, the more it can anticipate and learn things that they will like. To try to prevent endless scrolling and swiping, we studied cognitive techniques to encourage choosing an activity. Placing two activities next to each other and choosing one over the other proved to be the most effective way to encourage snap decisions and spontaneity.</p></div>
-                        </div>
                         
-                        <div class="interface-container">
-                            <div class="interface-image"><img src="img/fillipbrassneck.png" alt="Fillip app activity details screen"></div>
-                            <div class="interface-caption"><p><strong>ACTIVITY DETAILS. </strong>The Activity Details page provides additional information and context, to bring aspirational activity ideas into reality. Activity write-ups are described succinctly and thoughtfully using Fillip's easygoing language, to help users in deciding whether this activity is the right fit for them.</p></div>
-                        </div>
-                        
-                        <div class="interface-container">
-                            <div class="interface-image"><img src="img/fillipactivityinvite.png" alt="Fillip app confirmation screen"></div>
-                            <div class="interface-caption"><p><strong>CONFIRMATION SCREEN. </strong>Fillip provides sufficient feedback before users are committed to an activity. Furthermore, inviting friends, via the app or with a quick curated text message on behalf of the user, allows Fillip users to further embrace the delightful spontaneity that the application affords.</p></div>
-                        </div>
-                        
-                        <div class="interface-container">
-                            <div class="interface-image"><img src="img/fillipcolors.png" alt="Fillip app saved for later screen"></div>
-                            <div class="interface-caption"><p><strong>SAVE FOR LATER. </strong>Fillip recognizes that sometimes activities may sound appealing for later, just not in the moment. To facilitate and encourage users to return to the application at a later date, the Saved for Later screen will ensure that users will continually and consistently use Fillip as a reference whenever they need to come up with ideas.</p></div>
-                        </div>
-                        <div class="interface-container">
-                            <div class="interface-image"><img src="img/fillipprofile.png" alt="Fillip app profile screen"></div>
-                            <div class="interface-caption"><p><strong>PROFILE. </strong>Fillip's profile page allows users to connect with their friends, and review activities they've done in the past. After user testing, we realized that users were seeking a simple profile page that merely supported the cataloging of all the fun activities done through the app</p></div>
-                        </div>
+
+                    
                         
 	    			</div>
             
@@ -183,41 +196,13 @@
 			    	        <div class="col-2of8"><img src="img/fillipusertesting3.png" alt="Saved for Later Initial Mockup"></div>
 			    	        <div class="col-2of8"><img src="img/fillipusertesting4.png" alt="Profile Initial Mockup"></div>
                         </div>
+                        <p><strong>Style Guide. </strong>After the completion of user testing, the final prototype of the application was completed. For every step of the application, we wanted it to be as simple and straightforward as possible for users to move through the system but still allow for customization. Below is the style guide that informed the final interface design decisions:.</p>   
+                        <img src="img/style.png" class="enlarge" alt="a visual and content-based style guide to inform design decisions">
+
                         <p><strong>MY ROLES. </strong>Throughout the course of this process, I acted as project manager of the team. Not only did I participate in the creation and ideation of personas, principles,   wireframes, prototypes, and testing, I was also in charge of delegating roles for groupmates and ensuring that any design elements remained consistent across screens being designed. Furthermore, I was in charge of all content and copy creation, and designed the Activity Decision screens. I also created all motion graphics for the final video proposal.</p>   
 			    		
 				    </div>
             
-                    <div class="content-underline">&nbsp;</div>
-	    			
-                    <div id="design-decisions">
-                        <div class="hidden-h2"><h2>Design Decisions.</h2></div>
-                        
-                        <p><strong>Style Guide. </strong>After the completion of user testing, the final prototype of the application was completed. For every step of the application, we wanted it to be as simple and straightforward as possible for users to move through the system but still allow for customization. Below is the style guide that informed the final interface design decisions:.</p>   
-                        <img src="img/style.png" class="enlarge" alt="a visual and content-based style guide to inform design decisions">
-                        
-                       <p><strong>FURTHER DESIGN DETAILS. </strong></p>
-                        
-                        <div class="interface-container">                            
-                            <div class="interface-image"><img src="img/fillipvoiceandtone.png" alt="Fillip's voice and tone"></div>
-                            <div class="interface-caption">
-                                <p><strong>VOICE AND TONE. </strong>Fillip's language is lighthearted, playful, and a little bit sassy. The application is intended to feel like a knowledgable friend, making suggestions feel more authentic.</p>
-                            </div>
-                        </div>
-                        <div class="interface-container">                            
-                            <div class="interface-image"><img src="img/fillipcolors.png" alt="Fillip's color pallete"></div>
-                            <div class="interface-caption">
-                                <p><strong>COLORS. </strong>Bright colors were used to echo the playful nature of Fillip. Each category of activity is separated into a different color, to allow for subtle 
-                                    differentiation.</p>
-                            </div>
-                        </div>                   
-                        <div class="interface-container">                            
-                            <div class="interface-image"><img src="img/fillipdecisions.png" alt="With Fillip Friends decision screen"></div>
-                            <div class="interface-caption">
-                                <p><strong>ENCOURAGING DECISIONS. </strong>Fillip is also designed to help accomodate decision making with a group of people who all use the application. If swiping as a group, Fillip will choose a small selection of activites and display these seperately to each user. Fillip will then show everyone the activities that the most people were interested in.</p>
-                            </div>
-                        </div>                         
-            
-                    </div>
 
 			</div>
 		</section>
@@ -233,8 +218,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <script src="js/jquery.aniview.js"></script>
     
-	<script>
-        
+	<script>               
         $('.aniview').AniView();
 
 		var elementPosition = $('#scrolling-menu').offset();
@@ -243,7 +227,6 @@
 		var researchPosition = $('#research-analysis').offset();
 		var creationPosition = $('#app-creation').offset();
 		var processPosition = $('#process').offset();
-		var designPosition = $('#design-decisions').offset();
 
 
 		$(window).scroll(function(){
@@ -254,25 +237,23 @@
 		        }    
 
 		        if($(window).scrollTop() > opportunitiesPosition.top){
-		            $('#scrolling-menu-content').html("Identifying Opportunities");
+		            $('#scrolling-menu-content').html("Finding Openings.");
 		        } 
 
 		        if($(window).scrollTop() > researchPosition.top){
-		              $('#scrolling-menu-content').html("Research Analysis");
+		              $('#scrolling-menu-content').html("Research Analysis.");
 		        } 
 
 		        if($(window).scrollTop() > creationPosition.top){
-		              $('#scrolling-menu-content').html("App Creation");
+		              $('#scrolling-menu-content').html("App Creation.");
 		        } 
                 if($(window).scrollTop() > processPosition.top){
-		              $('#scrolling-menu-content').html("Process");
+		              $('#scrolling-menu-content').html("Process.");
 		        } 
-                if($(window).scrollTop() > designPosition.top){
-		              $('#scrolling-menu-content').html("Design Decisions");
-		        } 
-		});
-	</script>
 
+		});
+
+	</script>
 
 </body>
 
