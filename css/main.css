@@ -135,7 +135,7 @@ strong{
 .fillip-container{background-color: #987AB5;}
 .travelocity-container{background-color: #F37D67;}
 .video-container{background-color: #0083C0;}
-.centralcity-container{background-color:#d1292d;}
+.centralcity-container{background-color:#b4060a;}
 
 #hamburger{
     position: fixed;
@@ -238,6 +238,21 @@ a:hover{
 .border:hover .home-content-container{
     width: 49.5%;
 }
+
+@media(max-width:100em){
+    .home-content-container{
+        width: 40%;      
+    }
+    
+    .border img{
+        max-width:35%;
+    }
+    
+    .border:hover .home-content-container{
+    width: 39.4%;
+    }
+}
+
 
 .image-container:after{
     clear:both;
@@ -406,6 +421,26 @@ a:hover{
   .three-grid-clear{
     clear: both;
   }
+}
+
+.centralcitygrid{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:-2rem;
+}
+
+.centralcitygrid:after{
+    content:"";
+    clear:both;
+    display:block;
+}
+
+@media(min-width:100em){
+    .centralcitygrid{
+        width:70%;
+    }
+
 }
 
 #scrolling-menu{
