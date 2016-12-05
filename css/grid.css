@@ -1,4 +1,4 @@
-/*make grid class "float" columns next to each other
+  /*make grid class "float" columns next to each other
 and then clear the floats so elements so not hover/overlap etc*/
 .grid:after {
 	content: "";

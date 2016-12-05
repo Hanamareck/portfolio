@@ -55,6 +55,7 @@ body{
 
 h1,h2{
     font-family: 'Playfair Display', serif;
+    font-weight:900;
     color: white;
 	font-size: 4rem;
     display:inline-block;
@@ -88,6 +89,8 @@ h4{
     letter-spacing:.03rem;
 }
 p{
+    font-family: 'Libre Franklin', sans-serif;
+    font-style: normal;
     margin-top: 2rem;
 	font-size: 1rem;
     letter-spacing: .05rem;
@@ -95,6 +98,7 @@ p{
     font-weight: 100;
 	color: rgba(255,255,255,0.8);
 }
+
 
 @media(max-width:35em){
     h1{
@@ -113,15 +117,16 @@ strong{
 .page-content-container p{font-size: .85rem;}
 .page-specific-container p{margin-bottom: 1rem;}
 
-.col-1of3 p, .interface-caption p, .subparagraph p{
+.col-1of3 p, .interface-caption p, .subparagraph p, .subparagraph-fillip p{
     margin-top:.5rem;
     color: rgba(255,255,255,0.6);
     font-size: .75rem;
 }
-
+.subparagraph-fillip{text-align:center;}
 .subparagraph strong{
     display:block;
 }
+
 
 .large-images p{
     margin:.5rem .5rem 1.5rem 0;
@@ -135,7 +140,7 @@ strong{
 .fillip-container{background-color: #987AB5;}
 .travelocity-container{background-color: #F37D67;}
 .video-container{background-color: #0083C0;}
-.centralcity-container{background-color:#b4060a;}
+.centralcity-container{background-color:#a5181b;}
 
 #hamburger{
     position: fixed;
@@ -167,6 +172,14 @@ strong{
     flex: 1;
 }
 
+.center{
+    text-align:center;
+}
+
+.center img{
+    max-height:160px;
+    width:auto;
+}
 
 @media(max-width:30em){
     #hamburger{
@@ -190,8 +203,8 @@ a:hover{
 
 .underline{
     display: inline-block;
-    padding-bottom: .4rem;
-    border-bottom: .4rem white solid;
+    padding-bottom: .25rem;
+    border-bottom: .35rem white solid;
 }
 
 @media (max-width:60rem){
@@ -204,7 +217,7 @@ a:hover{
     box-sizing: border-box;
     margin-left: 6rem;
     z-index: 2;
-    width: 50%;
+    width: 43%;
     transition:all .3s ease;
     padding-right: 1rem;
 }
@@ -236,7 +249,7 @@ a:hover{
 }
 
 .border:hover .home-content-container{
-    width: 49.5%;
+    width: 42.5%;
 }
 
 @media(max-width:100em){
@@ -262,14 +275,14 @@ a:hover{
 @media (max-width:70em){
     .border{
         margin:6rem;
-        margin-top:24rem;
-        padding: 2rem 0 2rem 0;
+        margin-top:28rem;
+        padding: 3rem 0 3rem 0;
     }
     
     .border:hover{
         margin:6rem;
-        margin-top:24rem;
-        padding: 2rem 0 2rem 0;
+        margin-top:28rem;
+        padding: 3rem 0 3rem 0;
     }
     
     .home-content-container{
@@ -328,6 +341,39 @@ a:hover{
         left:0;
     }
 }
+
+.home-footer{
+    margin-left:auto;
+    margin-right:auto;
+    width:85%;
+    padding-top:2rem;
+    padding-bottom:1rem;
+}
+
+.back-to-top a{
+    font-weight:300;
+}
+
+.footer-container{
+    padding-bottom:1rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+}
+
+.home-footer img{
+    opacity:.3;
+    transition: all .2s ease;
+}
+.home-footer img:hover{opacity:1;}
+
+
+.footer-links img{
+    padding-left:1rem;
+    padding-right:1rem;
+}
+.footer-links a:hover{border:0;}
+
 
 
 /* PROJECT PAGE STYLING
@@ -547,6 +593,12 @@ a:hover{
 
 /* Project content IMAGE styling */
 
+@media(max-width:45em){
+    .col-1of3.phone-figure-padding, .col-1of2.phone-figure-padding{
+        padding-left:12vw;
+        padding-right:12vw;
+    }
+}
 
 .col-1of2 img{
     max-width: 100%;
